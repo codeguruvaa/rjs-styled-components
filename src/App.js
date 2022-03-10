@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+  
+  import React from 'react';
+  import styled from 'styled-components';
+  import Header from './Header';
+  import Slider from './Slider';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  var App =()=> {
 
-export default App;
+    var Header = styled.section`
+
+    width : 980px;
+    height:150px;
+    background-color: gray;
+
+  `;
+
+  var Header = styled.h2`
+    
+    color: orange;
+    background-color:cyan;
+    padding:20px;
+
+    `;
+
+    var Slider = styled.section`
+      width:250px;
+      height:250px;
+      background-color:red;
+    `
+
+
+    return (
+      <div className="App">
+        <Header> 
+          <h2>Heading</h2>
+        </Header>
+
+        <Slider>
+          <p>
+            The quick brown fox jumps over the lazy dogThe quick brown fox jumps over the lazy dog
+            The quick brown fox jumps over the lazy dogThe quick brown fox jumps over the lazy dog
+            The quick brown fox jumps over the lazy dogThe quick brown fox jumps over the lazy dog
+            The quick brown fox jumps over the lazy dogThe quick brown fox jumps over the lazy dog
+            The quick brown fox jumps over the lazy dogThe quick brown fox jumps over the lazy dog
+            The quick brown fox jumps over the lazy dogThe quick brown fox jumps over the lazy dog
+          </p>
+        </Slider>
+
+      </div>
+    );
+  }
+
+  export default App;
